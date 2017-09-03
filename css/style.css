@@ -375,7 +375,7 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="ma
 
 /*===== footer ===*/
 
-footer[role="footer"]{ background-color:#FFF; padding-top:100px; padding-bottom:77px}
+footer[role="footer"]{ background-color:#f7f9fa; padding-top:100px; padding-bottom:77px}
 
 footer[role="footer"] > h1 a{ margin:0 auto; display:block; max-width:93px;}
 
