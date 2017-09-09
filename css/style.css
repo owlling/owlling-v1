@@ -368,32 +368,31 @@ header[role="header-coder"] nav #menu-button.open span:nth-child(3) {top: 10px;
 -webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}
 
 
+/*header-per*/
 
-/*header-wpy*/
+header[role="header-per"]{ padding-top:40px; padding-bottom:0px;background: #1b8ae8}
 
-header[role="header-wpy"]{ padding-top:60px; padding-bottom:0px;background: #edf0f2}
+header[role="header-per"] h1{ padding:0; margin:0}
 
-header[role="header-wpy"] h1{ padding:0; margin:0}
+header[role="header-per"] h1 > a{ max-width:93px; display:block; float:left}
 
-header[role="header-wpy"] h1 > a{ max-width:93px; display:block; float:left}
-
-header[role="header-wpy"] nav{ padding-top:37.5px;transition-delay: 0s;
+header[role="header-per"] nav{ padding-top:37.5px;transition-delay: 0s;
 
 transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
 
-header[role="header-wpy"] nav ul{ display:none; position: fixed; z-index:60; text-align:center; width:100%; height:100%; top:0; left:0; right:0; background-color:rgba(0,161,233,0.8); padding:0; margin:0; padding-top:199px;}
+header[role="header-per"] nav ul{ display:none; position: fixed; z-index:60; text-align:center; width:100%; height:100%; top:0; left:0; right:0; background-color:rgba(27,138,232,0.8); padding:0; margin:0; padding-top:199px;}
 
-header[role="header-wpy"] nav ul > li{ font-weight:800; font-size:42px; display:block}
+header[role="header-per"] nav ul > li{ font-weight:800; font-size:42px; display:block}
 
-header[role="header-wpy"] nav ul > li > a{ display:block; line-height:72px; color:#fff}
+header[role="header-per"] nav ul > li > a{ display:block; line-height:72px; color:#fff}
 
-header[role="header-wpy"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#fb5353}
+header[role="header-per"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#fb5353}
 
-header[role="header-wpy"] nav #menu-button {width: 31px;font-size: 0;float: right;height: 19px;position: relative; z-index:70;
+header[role="header-per"] nav #menu-button {width: 31px;font-size: 0;float: right;height: 19px;position: relative; z-index:70;
 
 -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
 
-header[role="header-wpy"] nav #menu-button span {display: block;position: absolute;z-index: 60;height: 3px;
+header[role="header-per"] nav #menu-button span {display: block;position: absolute;z-index: 60;height: 3px;
 
 width: 100%;background: #111111;opacity: 1;left: 0;
 
@@ -401,21 +400,21 @@ width: 100%;background: #111111;opacity: 1;left: 0;
 
 transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
 
-header[role="header-wpy"] nav #menu-button span {background: #ffffff;}
+header[role="header-per"] nav #menu-button span {background: #ffffff;}
 
-header[role="header-wpy"] nav #menu-button span:nth-child(1) {top:0px;}
+header[role="header-per"] nav #menu-button span:nth-child(1) {top:0px;}
 
-header[role="header-wpy"] nav #menu-button span:nth-child(2) {top:7px;}
+header[role="header-per"] nav #menu-button span:nth-child(2) {top:7px;}
 
-header[role="header-wpy"] nav #menu-button span:nth-child(3) {top:14px;}
+header[role="header-per"] nav #menu-button span:nth-child(3) {top:14px;}
 
-header[role="header-wpy"] nav #menu-button.open span:nth-child(1) {top: 10px;
+header[role="header-per"] nav #menu-button.open span:nth-child(1) {top: 10px;
 
 -webkit-transform: rotate(135deg);-moz-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);}
 
-header[role="header-wpy"] nav #menu-button.open span:nth-child(2) {opacity: 0;left: -60px;}
+header[role="header-per"] nav #menu-button.open span:nth-child(2) {opacity: 0;left: -60px;}
 
-header[role="header-wpy"] nav #menu-button.open span:nth-child(3) {top: 10px;
+header[role="header-per"] nav #menu-button.open span:nth-child(3) {top: 10px;
 
 -webkit-transform: rotate(-135deg);-moz-transform: rotate(-135deg);-o-transform: rotate(-135deg);transform: rotate(-135deg);}
 
