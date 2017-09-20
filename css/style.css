@@ -162,6 +162,27 @@ blockquote:before, blockquote:after, q:before, q:after {
     color:#fb5353;
     text-decoration:none;
     }
+/*blog text link*/
+#blog-next a:link,
+    #blog-next a:visited  {
+    color:#ccc;
+    text-decoration:none;
+    }
+    #blog-next a:hover,
+    #blog-next a:active  {
+    color:#fb5353;
+    text-decoration:none;
+    }
+#sidebar-blog a:link,
+    #sidebar-blog a:visited  {
+    color:#404040;
+    text-decoration:none;
+    }
+    #sidebar-blog a:hover,
+    #sidebar-blog a:active  {
+    color:#fb5353;
+    text-decoration:none;
+    }
 
  /*about link*/
 #resume a:link,
