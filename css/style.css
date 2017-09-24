@@ -150,6 +150,17 @@ blockquote:before, blockquote:after, q:before, q:after {
 	width: 96%;
 	/*box-shadow: 0px 2px 22px 0px #f1f1f1;*/
 }
+/*Velacielad*/
+#Velacielad a:link,
+    #Velacielad a:visited  {
+    color:#404040;
+    text-decoration:underline;
+    }
+    #Velacielad a:hover,
+    #Velacielad a:active  {
+    color:#fb5353;
+    text-decoration:underline;
+    }
 
 /*home text link*/
 #sidebar a:link,
