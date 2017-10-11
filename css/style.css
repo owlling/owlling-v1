@@ -195,13 +195,13 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
  /*about Velacielad Deng*/
-#Velacielad a:link,
-    #Velacielad a:visited  {
+#linko a:link,
+    #linko a:visited  {
     color:#00a1e9;
     text-decoration:underline;
     }
-    #Velacielad a:hover,
-    #Velacielad a:active  {
+    #linko a:hover,
+    #linko a:active  {
     color:#fb5353;
     text-decoration:underline;
     }
