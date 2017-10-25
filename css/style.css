@@ -128,26 +128,26 @@ blockquote:before, blockquote:after, q:before, q:after {
 .img-index {
 	margin-top: 0%;
 	margin-left: 0%;
-	width: 92%;
+	width: 100%;
 }
 .img-index:hover {
 	margin-top: 0%;
 	margin-left: 0%;
 	height: 100%;
-	width: 92%;
+	width: 100%;
 	box-shadow: 0px 2px 22px 0px #f1f1f1;
 }
 
 .img-gif {
 	margin-top: 0%;
 	margin-left: 0%;
-	width: 96%;
+	width: 100%;
 }
 .img-gif:hover {
 	margin-top: 0%;
 	margin-left: 0%;
 	height: 100%;
-	width: 96%;
+	width: 98%;
 	/*box-shadow: 0px 2px 22px 0px #f1f1f1;*/
 }
 
