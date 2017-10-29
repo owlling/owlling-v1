@@ -1,7 +1,4 @@
-/*!
- * imagesLoaded v3.0.2
- * JavaScript is all like "You images are done yet or what?"
- */
+//
 
 ( function( window ) {
 
@@ -10,8 +7,6 @@
 var $ = window.jQuery;
 var console = window.console;
 var hasConsole = typeof console !== 'undefined';
-
-// -------------------------- helpers -------------------------- //
 
 // extend objects
 function extend( a, b ) {
@@ -44,15 +39,10 @@ function makeArray( obj ) {
   return ary;
 }
 
-// --------------------------  -------------------------- //
 
 function defineImagesLoaded( EventEmitter, eventie ) {
 
-  /**
-   * @param {Array, Element, NodeList, String} elem
-   * @param {Object or Function} options - if function, use as callback
-   * @param {Function} onAlways - callback function
-   */
+  //
   function ImagesLoaded( elem, options, onAlways ) {
     // coerce ImagesLoaded() without new, to be new ImagesLoaded()
     if ( !( this instanceof ImagesLoaded ) ) {
@@ -114,9 +104,7 @@ function defineImagesLoaded( EventEmitter, eventie ) {
     }
   };
 
-  /**
-   * @param {Image} img
-   */
+  //
   ImagesLoaded.prototype.addImage = function( img ) {
     var loadingImage = new LoadingImage( img );
     this.images.push( loadingImage );
@@ -202,15 +190,12 @@ function defineImagesLoaded( EventEmitter, eventie ) {
     // add this to cache
     cache[ this.img.src ] = this;
 
-    // If complete is true and browser supports natural sizes,
-    // try to check for image status manually.
-    if ( this.img.complete && this.img.naturalWidth !== undefined ) {
+   if ( this.img.complete && this.img.naturalWidth !== undefined ) {
       // report based on naturalWidth
       this.confirm( this.img.naturalWidth !== 0, 'naturalWidth' );
       return;
     }
 
-    // If none of the checks above matched, simulate loading on detached element.
     var proxyImage = this.proxyImage = new Image();
     eventie.bind( proxyImage, 'load', this );
     eventie.bind( proxyImage, 'error', this );
@@ -235,7 +220,6 @@ function defineImagesLoaded( EventEmitter, eventie ) {
     this.emit( 'confirm', this, message );
   };
 
-  // trigger specified handler for event type
   LoadingImage.prototype.handleEvent = function( event ) {
     var method = 'on' + event.type;
     if ( this[ method ] ) {
