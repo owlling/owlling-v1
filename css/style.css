@@ -178,7 +178,7 @@ blockquote:before, blockquote:after, q:before, q:after {
     /*about resume*/
 #resume a:link,
     #resume a:visited  {
-    color:#555;
+    color:#444;
     text-decoration:underline;
     }
     #resume a:hover,
