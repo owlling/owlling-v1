@@ -250,7 +250,7 @@ a:focus, img:focus, button:focus, .btn:focus {outline: none;}
 
 /*===== Header ===*/
 
-header[role="header"]{ padding-top:40px; padding-bottom:40px}
+header[role="header"]{ padding-top:66px; padding-bottom:40px}
 
 header[role="header"] h1{ padding:0; margin:0}
 
@@ -268,7 +268,7 @@ header[role="header"] nav ul > li > a{ display:block; line-height:72px; color:#4
 
 header[role="header"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#fb5353}
 
-header[role="header"] nav #menu-button {width: 31px;font-size: 0;float: right;height: 19px;position: relative; z-index:70;
+header[role="header"] nav #menu-button {width: 31px;font-size: 0;float: right;height: 19px;bottom:16px;position: relative; z-index:70;
 
 -webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
 
@@ -555,7 +555,7 @@ header[role="header-party"] nav #menu-button.open span:nth-child(3) {top: 10px;
 
 main[role="main-home-wrapper"],main[role="main-inner-wrapper"] { padding-bottom:80px }
 
-main[role="main-home-wrapper"] article[role="pge-title-content"],main[role="main-inner-wrapper"] article[role="pge-title-content"]{ padding-left:41px;}
+main[role="main-home-wrapper"] article[role="pge-title-content"],main[role="main-inner-wrapper"] article[role="pge-title-content"]{ padding-left:12px;}
 
 main[role="main-home-wrapper"] article[role="pge-title-content"] header,main[role="main-inner-wrapper"] article[role="pge-title-content"] header{ padding-bottom:19px; padding-top:83px}
 
@@ -569,9 +569,9 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="ma
 
 /*===== footer ===*/
 
-footer[role="footer"]{ background-color:#f7f9fa; padding-top:100px; padding-bottom:77px}
+footer[role="footer"]{ background-color:#414141; padding-top:100px; padding-bottom:40px}
 
-footer[role="footer"] > h1 a{ margin:0 auto; display:block; max-width:93px;}
+footer[role="footer"] > h1 a{ margin:0 auto; display:block; max-width:74px;}
 
 footer[role="footer"] nav{ padding-top:37px; padding-bottom:43px}
 
@@ -579,27 +579,27 @@ footer[role="footer"] nav > ul{ text-align:center; padding:0; margin:0}
 
 footer[role="footer"] nav > ul > li{ display: inline-block; text-transform:uppercase; font-size:15px; margin:0 13px}
 
-footer[role="footer"] nav > ul > li > a{ color:#9d9d9d}
+footer[role="footer"] nav > ul > li > a{ color:#ffffff}
 
 footer[role="footer"] nav > ul > li:hover a{ text-decoration:none; color:#fb5353}
 
-footer[role="footer"] ul[role="social-icons"]{ padding:0; margin:0; text-align:center; padding-bottom:40px;}
+footer[role="footer"] ul[role="social-icons"]{ padding:0; margin:0; text-align:center; padding-bottom:120px;}
 
 footer[role="footer"] ul[role="social-icons"] > li{ display: inline-block; margin:0 6.5px}
 
-footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#bbbbbb; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
+footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#000; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
 
 footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#fb5353}
 
-footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#9c9c9c}
+footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#777777}
 
 /*===== About ===*/
 
-main[role="main-inner-wrapper"] .about-content{ background-color:#fb5353; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
+main[role="main-inner-wrapper"] .about-content{ background-color:#fb5353; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:48px}
 
 main[role="main-inner-wrapper"] .about-content p{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px}
 
-main[role="main-inner-wrapper"] .thumbnails-pan{ padding-top:30px}
+main[role="main-inner-wrapper"] .thumbnails-pan{ padding-top:46px}
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure{ background-color:#FFF; position:relative; overflow:hidden; cursor:pointer}
 
@@ -635,7 +635,7 @@ section.blog-content:hover figure img{ opacity:0.5}
 
 /*===== Contact ===*/
 
-article[role="pge-title-content"].contact-header{ padding-bottom:120px}
+article[role="pge-title-content"].contact-header{ padding-bottom:0px}
 
 article[role="pge-title-content"].contact-header p a{ color:#343434; padding-right:34px}
 
