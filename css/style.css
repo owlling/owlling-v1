@@ -115,6 +115,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 }
 
+
 .clear {
 
 	clear: both;
@@ -135,7 +136,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 	margin-left: 0%;
 	height: 100%;
 	width: 100%;
-	box-shadow: 0px 2px 22px 0px #f1f1f1;
+	box-shadow: 0px 16px 22px 0px #ffd9d8;
 }
 
 .img-gif {
@@ -240,6 +241,27 @@ a {
 	font-size:0;
 	overflow:hidden;
 }
+
+.item-meta h3{
+	line-height: 1.6;
+    margin: .4em 0;
+    color: #fff;
+    display: inline;
+    padding: .25em .5em .25em;
+    background: #fb5353;
+}
+
+.friend h5{
+	line-height: 1.6;
+    margin: .4em 0;
+    color: #fff;
+    display: inline;
+    padding: .25em .5em .25em;
+    background: #dddddd;
+}
+   
+
+
 a:focus, img:focus, button:focus, .btn:focus {outline: none;}
 
 ::-moz-selection {background-color:#fb5353;color:#fff;text-shadow:none;}
