@@ -136,7 +136,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 	margin-left: 0%;
 	height: 100%;
 	width: 100%;
-	box-shadow: 0px 16px 22px 0px #ffd9d8;
+	box-shadow: 0px 14px 12px 0px #ffd9d8;
 }
 
 .img-gif {
@@ -252,6 +252,15 @@ a {
 }
 
 .friend h5{
+	line-height: 1.6;
+    margin: .4em 0;
+    color: #fff;
+    display: inline;
+    padding: .25em .5em .25em;
+    background: #dddddd;
+}
+
+.Small-label p{
 	line-height: 1.6;
     margin: .4em 0;
     color: #fff;
