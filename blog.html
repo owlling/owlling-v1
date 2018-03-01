@@ -98,6 +98,12 @@
         <!-- header -->
 
         <!-- main -->
+        <!-- 右侧小火箭图标返回顶部 -->
+        <!-- <div id="toTop">
+        <span id="gotop1">
+            <img src="images/huojian.svg" alt="返回顶部小火箭">
+        </span>
+        </div> -->
 
         <main role="main-inner-wrapper" class="container">
 
@@ -134,7 +140,7 @@
 
                                     <div class="post-date">
 
-                                        <span>总结</span>
+                                        <span class="font">总结</span>
 
                                     </div>
 
@@ -144,7 +150,7 @@
 
                                 </a>
 
-                                <article>
+                                <article class="font">
 
                                     保持同理心去做设计，从用户的角度去思考问题。你的产品和设计应是为用户服务而不...
 
@@ -164,7 +170,7 @@
 
                                     <div class="post-date">
 
-                                        <span>总结</span>
+                                        <span class="font">总结</span>
 
                                     </div>
 
@@ -174,7 +180,7 @@
 
                                 </a>
 
-                                <article>
+                                <article class="font">
 
                                    我个人学习这门课程是以理论知识的心情学习，确实很多知识点能够用到解决一些生活或...
 
@@ -194,7 +200,7 @@
 
                                     <div class="post-date">
 
-                                        <span>笔记</span>
+                                        <span class="font">笔记</span>
 
                                     </div>
 
@@ -204,7 +210,7 @@
 
                                 </a>
 
-                                <article>
+                                <article class="font">
 
                                    西文字体2这本书讲解了西文字体的衬线字体无衬线字体和艺术字体的表现和运用手法，这...
 
@@ -238,7 +244,7 @@
 
                                     <div class="post-date">
 
-                                        <span>笔记</span>
+                                        <span class="font">笔记</span>
 
                                     </div>
 
@@ -248,7 +254,7 @@
 
                                 </a>
 
-                                <article>
+                                <article class="font">
 
                                   最近读到1688UED团队的书籍《U一点-料》很有感触和思考，也找到了自己团队...
 
@@ -268,7 +274,7 @@
 
                                     <div class="post-date">
 
-                                        <span>笔记</span>
+                                        <span class="font">笔记</span>
 
                                     </div>
 
@@ -278,7 +284,7 @@
 
                                 </a>
 
-                                <article>
+                                <article class="font">
 
                                     用户体验要素这本书无论是产品经理还是交互设计师都是值得一览的。这本书讲解的...
 
@@ -298,7 +304,7 @@
 
                                     <div class="post-date">
 
-                                        <span>总结</span>
+                                        <span class="font">总结</span>
 
                                     </div>
 
@@ -308,7 +314,7 @@
 
                                 </a>
 
-                                <article>
+                                <article class="font">
 
                                     刚开始对栅格系统有很多疑惑，什么是栅格化系统？Bootstrap中为什么要使用...
 
@@ -410,6 +416,40 @@
         <!-- jquery.countdown -->
 
         <script src="js/html5shiv.js" type="text/javascript"></script>
+
+        <script src="js/huojian/jquery.min.js"></script>
+        <script src="js/huojian/TweenMax.min.js"></script>
+        <script src="js/huojian/ScrollToPlugin.min.js"></script>
+        <script>
+
+        $(function() {
+
+
+         // 返回顶部，绑定gotop1图标和gotop2文字事件
+        $("#gotop1,#gotop2").click(function(e) {
+         TweenMax.to(window, 1.5, {scrollTo:0, ease: Expo.easeInOut});
+         var huojian = new TimelineLite();
+         huojian.to("#gotop1", 1, {rotationY:720, scale:0.6, y:"+=40", ease:  Power4.easeOut})
+         .to("#gotop1", 1, {y:-1000, opacity:0, ease:  Power4.easeOut}, 0.6)
+         .to("#gotop1", 1, {y:0, rotationY:0, opacity:1, scale:1, ease: Expo.easeOut, clearProps: "all"}, "1.4");
+         });
+                    });
+        </script>
+
+        <script type="text/javascript">
+        $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+        } else {
+        $('#toTop').fadeOut();
+        }
+        });
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},500);
+        });
+         });
+        </script>
 
     </body>
 
