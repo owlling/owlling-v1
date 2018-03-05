@@ -320,10 +320,16 @@ a {
 
 /* end 小火箭 */
 
+/*FONT*/
+
 .font{
     font-family: 'Noto Serif', 'Times New Roman', serif;
 }
    }
+
+
+
+
 
 
 a:focus, img:focus, button:focus, .btn:focus {outline: none;}
