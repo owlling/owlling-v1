@@ -86,7 +86,7 @@ $(document).ready(function() {
 
 		title: "Navigation",
 
-		format: "multitoggle"
+		format: "multitoggle",
 
 	});
 
@@ -95,6 +95,14 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 
 	});
+
+	$("#menu-button").hover(function(){
+    
+    $("#menu-button").css("opacity","0.5");
+      },function(){
+    
+    $("#menu-button").css("opacity","1");
+       });
 
 
 	new AnimOnScroll( document.getElementById( 'grid' ), {
