@@ -333,6 +333,34 @@ a {
     background: #dddddd;
 }
 
+
+.friend h5{
+  line-height: 1.6;
+    margin: .4em 0;
+    color: #fff;
+    display: inline;
+    padding: .25em .5em .25em;
+    background: #dddddd;
+}
+
+.badge0{
+    background:#ffffff;
+    display: inline-block;
+    padding: .4em .8em .4em;
+    font-size: 75%;
+    font-style: bold;
+    line-height: 1.5;
+    font-weight:600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .4rem;
+    border:1px solid #dddddd;
+    color:#999999;
+    margin-right:1rem!important;
+}
+
+
 .Small-label p{
   line-height: 1.6;
     margin: .4em 0;
@@ -481,6 +509,7 @@ a {
 
 .font{
     font-family: 'Noto Serif', 'Times New Roman', serif;
+
 }
    }
 
