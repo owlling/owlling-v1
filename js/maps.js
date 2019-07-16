@@ -14,9 +14,9 @@ var options = {
 
 	},
 
-	center: new google.maps.LatLng(39.1040015,117.1685062),
+	center: new google.maps.LatLng(39.8984498,116.4126756),
 
-	zoom: 13,
+	zoom: 12.06,
 
 	disableDefaultUI: true,	
 
