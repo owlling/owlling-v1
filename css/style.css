@@ -573,6 +573,11 @@ a {
     font-family: 'Noto Serif', 'Times New Roman', serif;
 }
 
+.gitbook {
+    font-size: 18px;
+    color: #fb5353;
+}
+
 
 }
 
@@ -1605,10 +1610,12 @@ article[role="pge-title-content"].contact-header p a:hover {
 .contat-from-wrapper form ::-moz-placeholder {
     color: #404040;
 }
+
 /* firefox 19+ */
 .contat-from-wrapper form :-ms-input-placeholder {
     color: #404040;
 }
+
 /* ie */
 .contat-from-wrapper form input:-moz-placeholder {
     color: #404040;
