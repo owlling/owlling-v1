@@ -1,119 +1,115 @@
 //
 
-$(document).ready(function() {     
+$(document).ready(function() {
 
-	$.fn.menumaker = function(options) {
+    $.fn.menumaker = function(options) {
 
-   var cssmenu = $(this), settings = $.extend({
+        var cssmenu = $(this),
+            settings = $.extend({
 
-        title: "Menu",
+                title: "Menu",
 
-        format: "dropdown",
+                format: "dropdown",
 
-        sticky: false
+                sticky: false
 
-      }, options);
-
-
-      return this.each(function() {		
-
-		cssmenu.prepend('<div id="menu-button"><span></span><span></span><span></span>' + settings.title + '</div>');
-
-		$(this).find("#menu-button").on('click', function(){
-
-		  $(this).toggleClass('menu-opened');
-
-		  var mainmenu = $(this).next('ul');
-
-		  if (mainmenu.hasClass('open')) { 
-
-			mainmenu.slideUp().removeClass('open');
-
-		  }
-
-		  else {
-
-			mainmenu.slideDown().addClass('open');
-
-			if (settings.format === "dropdown") {
-
-			  mainmenu.find('ul').slideDown();
-
-			}
-
-		  }
-
-		});
-
-		
-		cssmenu.find('li ul').parent().addClass('has-sub');
-
-		multiTg = function() {
-
-		  cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-
-		  cssmenu.find('.submenu-button').on('click', function() {
-
-			$(this).toggleClass('submenu-opened');
-
-			if ($(this).siblings('ul').hasClass('open')) {
-
-			  $(this).siblings('ul').removeClass('open').slideUp();
-
-			}
-
-			else {
-
-			  $(this).siblings('ul').addClass('open').slideDown();
-
-			}
-
-		  });
-
-		};
+            }, options);
 
 
-		if (settings.format === 'multitoggle') multiTg();
+        return this.each(function() {
 
-		else cssmenu.addClass('dropdown');		
+            cssmenu.prepend('<div id="menu-button"><span></span><span></span><span></span>' + settings.title + '</div>');
 
-      });
+            $(this).find("#menu-button").on('click', function() {
 
-	};
-	
+                $(this).toggleClass('menu-opened');
 
-	$(".navy").menumaker({
+                var mainmenu = $(this).next('ul');
 
-		title: "Navigation",
+                if (mainmenu.hasClass('open')) {
 
-		format: "multitoggle",
+                    mainmenu.slideUp().removeClass('open');
 
-	});
+                } else {
 
-		$('#menu-button').click(function(){
+                    mainmenu.slideDown().addClass('open');
 
-		$(this).toggleClass('open');
+                    if (settings.format === "dropdown") {
 
-	});
+                        mainmenu.find('ul').slideDown();
 
-	$("#menu-button").hover(function(){
-    
-    $("#menu-button").css("opacity","0.5");
-      },function(){
-    
-    $("#menu-button").css("opacity","1");
-       });
+                    }
+
+                }
+
+            });
 
 
-	new AnimOnScroll( document.getElementById( 'grid' ), {
+            cssmenu.find('li ul').parent().addClass('has-sub');
 
-				minDuration : 0.4,
+            multiTg = function() {
 
-				maxDuration : 0.7,
+                cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
 
-				viewportFactor : 0.2
+                cssmenu.find('.submenu-button').on('click', function() {
 
-			} );	
+                    $(this).toggleClass('submenu-opened');
+
+                    if ($(this).siblings('ul').hasClass('open')) {
+
+                        $(this).siblings('ul').removeClass('open').slideUp();
+
+                    } else {
+
+                        $(this).siblings('ul').addClass('open').slideDown();
+
+                    }
+
+                });
+
+            };
+
+
+            if (settings.format === 'multitoggle') multiTg();
+
+            else cssmenu.addClass('dropdown');
+
+        });
+
+    };
+
+
+    $(".navy").menumaker({
+
+        title: "Navigation",
+
+        format: "multitoggle",
+
+    });
+
+    $('#menu-button').click(function() {
+
+        $(this).toggleClass('open');
+
+    });
+
+    $("#menu-button").hover(function() {
+
+        $("#menu-button").css("opacity", "0.5");
+    }, function() {
+
+        $("#menu-button").css("opacity", "1");
+    });
+
+
+    new AnimOnScroll(document.getElementById('grid'), {
+
+        minDuration: 0.4,
+
+        maxDuration: 0.7,
+
+        viewportFactor: 0.2
+
+    });
 
 });
-
